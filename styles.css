@@ -5,6 +5,7 @@
 }
 
 body {
+  background-color: var(--display-color);
   display: flex;
   flex-direction: column;
   margin: 80px 0 45px 0;
@@ -25,7 +26,7 @@ body {
 }
 
 .header__text {
-  color: #ffffff;
+  color: var(--display-color);
 }
 
 .header__heading {
@@ -57,15 +58,21 @@ body {
 }
 
 .card__bookmark {
-  font-size: 2em;
-  padding: 18px 12px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  background-color: var(--display-color);
+  border: none;
   position: absolute;
   top: -20px;
   right: 40px;
 }
 
+.card__bookmark__size {
+  width: 50px;
+  height: 50px; /* Adjust size as needed */
+  vertical-align: middle; /* Aligns the icon vertically within the button */
+}
+
 :root {
   --pink-color: rgb(225, 179, 186);
   --gold-color: rgb(170, 145, 77);
+  --display-color: seashell;
 }
