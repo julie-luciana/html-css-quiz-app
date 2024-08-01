@@ -1,7 +1,71 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-h1 {
-  background-color: blue;
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 80px 0 45px 0;
+  font-family: system-ui;
+}
+
+.header {
+  background: var(--pink-color);
+  color: var(--gold-color);
+  height: 80px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+.header__text {
+  color: #ffffff;
+}
+
+.header__heading {
+  margin: 0;
+}
+
+.footer {
+  background: var(--pink-color);
+  color: var(--gold-color);
+  text-align: center;
+  height: 48px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.card {
+  margin: 30px 10%;
+  border: 5px solid var(--gold-color);
+  padding: 40px;
+  scroll-margin-top: 100px;
+  border-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: sticky;
+}
+
+.card__heading {
+  margin: 0 0 10px 0;
+}
+
+.card__bookmark {
+  font-size: 2em;
+  padding: 18px 12px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  position: absolute;
+  top: -20px;
+  right: 40px;
+}
+
+:root {
+  --pink-color: rgb(225, 179, 186);
+  --gold-color: rgb(170, 145, 77);
 }
