@@ -114,3 +114,93 @@ body {
   font-size: 16px;
   padding: 10px 20px;
 }
+
+/* PROFILE */
+
+.profile__picture {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.profile__picture img {
+  width: 20%;
+  height: 20%;
+  position: relative;
+  left: 0;
+  border-radius: 50%;
+}
+
+.profile__name {
+  align-items: right;
+  position: relative;
+  right: -50%;
+  top: -120px;
+}
+
+.profile__details {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.profile__details h2 {
+  margin-bottom: 1rem;
+}
+
+.profile__details textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.profile__stats {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.profile__stats .stat {
+  text-align: center;
+}
+
+/* added from Chat GPT */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}

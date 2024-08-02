@@ -3,9 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    Profile
+    <header class="header">
+        <h1>Profile</h1>
+    </header>
+
+    <main >
+
+        <section >
+            <div class="profile__picture">
+            <img src="files/profile.png" alt="Profile Picture" id="profilePic">
+            </div>
+            <div class="profile__name">
+                <h2>Max Doe</h2>
+            </div>
+        </section>
+        
+
+
+
+        <section class="profile__details">
+            <h2>About Me</h2>
+            <textarea id="aboutMe" rows="5" placeholder="Write something about yourself..."></textarea>
+        </section>
+        <section class="profile__stats">
+            <div class="stat">
+                <h3>Created Questions</h3>
+                <p id="questionsCount">0</p>
+            </div>
+            <div class="stat">
+                <h3>Bookmarks</h3>
+                <p id="bookmarksCount">0</p>
+            </div>
+        </section>
+        <section>
+            <h3>Dark Mode</h3>
+            <label class="switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider round"></span>
+            </label>
+           
+        </section>
+    </main>
+
+   
+    <footer class="footer">
+        <a href="index.html" class="footer__icon" >
+          <img src="files/home.png" alt="home">
+        </a>
+        <a href="bookmarks.html" class="footer__icon">
+          <img src="files/bookmark_transparent.png" alt="bookmarked">
+        </a>
+        <a href="profile.html" class="footer__icon">
+          <img src="files/profile_filled.png" alt="profile">
+        </a>
+      
+      </footer>
 </body>
 </html>
