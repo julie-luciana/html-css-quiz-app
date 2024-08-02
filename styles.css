@@ -156,14 +156,14 @@ body {
   border-radius: 5px;
 }
 
-.profile__stats {
+.counter__questions {
   margin-top: 2rem;
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.profile__stats .stat {
+.counter {
   text-align: center;
 }
 
